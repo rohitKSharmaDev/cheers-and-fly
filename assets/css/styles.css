@@ -1,0 +1,1030 @@
+body {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#loadingDiv {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: radial-gradient(#1f9fff, #e6f7ff);
+  z-index: 99999;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loadingDiv .loading-txt {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 100;
+  margin: 30px 0 0;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+
+.loader {
+  margin: 5px auto 60px;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6,
+.uk-heading-small,
+.uk-heading-medium {
+  font-family: 'Hanuman', serif !important;
+  color: #1a447c;
+}
+
+.uk-heading-medium {
+  font-size: 28px;
+}
+
+a.uk-button:hover,
+#footer a.uk-button:hover {
+  text-decoration: none;
+}
+
+.uk-button {
+  border-radius: 4px;
+}
+
+.uk-button-primary {
+  background-color: #4ab6d4;
+}
+
+.uk-button-primary:hover,
+.uk-button-primary:focus,
+.uk-button-primary:hover:visited {
+  background-color: #348fc8;
+}
+
+.uk-button-secondary {
+  background-color: #cb314a;
+}
+
+.uk-button-secondary:hover,
+.uk-button-secondary:focus {
+  background-color: #7b272a;
+}
+
+.height-100vh {
+  min-height: calc(100vh - 101px);
+}
+
+.page-breadcrumb-wrapper {
+  padding: 0 15px;
+}
+
+.back-top {
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  text-align: center;
+  color: #fff !important;
+  background: #c93048;
+  display: none;
+  right: 24px;
+  bottom: 24px;
+  border-radius: 50%;
+  position: fixed;
+  transition: all ease-in 0.3s;
+  -webkit-transition: all ease-in 0.3s;
+  z-index: +999;
+}
+
+.back-top:hover {
+  background: #7b272a;
+}
+
+.back-top svg {
+  margin-top: 5px;
+}
+
+.back-top svg polyline {
+  stroke-width: 2px;
+}
+
+.uk-breadcrumb {
+  margin-bottom: 10px;
+}
+
+.common-quick-enquiry-icon {
+  width: 36px;
+  height: 36px;
+  display: none;
+  border-radius: 50%;
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  background: #4ab6d4;
+  color: #fff;
+  transition: all ease-in 0.3s;
+  -webkit-transition: all ease-in 0.3s;
+  z-index: +1000;
+}
+
+.common-quick-enquiry-icon svg rect:nth-child(1) {
+  width: 2px;
+}
+
+.common-quick-enquiry-icon svg rect:nth-child(2) {
+  height: 2px;
+}
+
+
+.common-quick-enquiry-icon:hover {
+  background: #2c6d80;
+  color: #fff;
+}
+
+.quick-enquiry-common-wrapper .uk-form-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.quick-enquiry-common-wrapper .uk-radio {
+  margin-right: 5px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.color-green {
+  color: #48a68d;
+  font-weight: bold;
+}
+
+.sub-heading {
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.travel-intro-img {
+  display: block;
+  width: 470px;
+  margin: auto;
+}
+
+label.error {
+  display: block;
+  color: red;
+  font-size: 12px;
+}
+
+#enquiry-form-success,
+#enquiry-form-error,
+#contact-form-success,
+#contact-form-error {
+  display: none;
+}
+
+#contact-form-success .uk-h3,
+#contact-form-error .uk-h3 {
+  color: #fff;
+}
+
+/* END-OF-COMMON-FUNCTIONALITIES */
+
+
+.top-header-wrapper {
+  padding: 5px 0;
+  background-color: #1c4c81;
+}
+
+.top-header-wrapper a {
+  font-size: 13px;
+  color: #fff;
+}
+
+.top-header-wrapper .contact-info-wrapper {
+  width: 100%;
+}
+
+.social-media-channels .social-media-list,
+.footer-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-media-channels .social-media-list .uk-icon-button {
+  width: 28px;
+  height: 28px;
+  color: #1c4c81;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+}
+
+.social-media-channels .social-media-list .uk-icon-button svg {
+  width: 16px;
+}
+
+.social-media-channels .social-media-list .uk-icon-button:hover {
+  transform: rotate(360deg) scale(1.1);
+}
+
+#header .uk-icon svg {
+  fill: #1c437a;
+}
+
+#header .uk-offcanvas-bar {
+  background: #1c437a;
+}
+
+#header .uk-offcanvas-bar .uk-offcanvas-close {
+  top: 30px;
+}
+
+#header .uk-offcanvas-bar .uk-nav li {
+  padding-left: 15px;
+}
+
+#header .uk-offcanvas-bar .uk-nav li.uk-nav-header {
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+#header .uk-navbar-container {
+  padding: 5px 15px;
+  border-bottom: 3px solid #c8314e;
+  box-shadow: 0 5px 7px rgb(0 0 0 / 20%);
+}
+
+#header .uk-navbar-container.navbar-mobile {
+  padding: 5px 10px;
+}
+
+#header .uk-navbar-nav>li>a,
+#header .uk-navbar-item,
+#header .uk-navbar-toggle {
+  min-height: 50px;
+}
+
+#header .uk-navbar-nav>li>a,
+#header .uk-navbar-dropdown-nav>li>a {
+  position: relative;
+  min-height: 50px;
+  margin-left: 10px;
+  color: #1c4c81;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+}
+
+#header .uk-navbar-dropdown-nav>li>a:first-child {
+  margin-left: 0;
+}
+
+#header .uk-navbar-dropdown-nav>li>a {
+  margin-bottom: 10px;
+}
+
+#header .uk-navbar-dropdown {
+  background: #f8f8f8;
+}
+
+#header .uk-navbar-dropdown .uk-navbar-dropdown-nav>li>a {
+  color: #1c4c81;
+  min-height: unset;
+}
+
+#header .uk-navbar-nav>li>a.active-nav-link::after,
+#header .uk-navbar-nav>li>a::after,
+#header .uk-navbar-dropdown-nav>li>a::after,
+#header .uk-navbar-dropdown .uk-navbar-dropdown-nav>li>a.active-nav-link::after,
+#header .uk-navbar-nav>li.active-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #1c4c81;
+  transition: width 0.3s;
+}
+
+#header .uk-navbar-nav>li>a.active-nav-link::after,
+#header .uk-navbar-nav>li>a:hover::after,
+#header .uk-navbar-dropdown-nav>li>a:hover::after,
+#header .uk-navbar-dropdown .uk-navbar-dropdown-nav>li>a.active-nav-link::after,
+#header .uk-navbar-nav>li.active-nav-link::after {
+  width: 100%;
+}
+
+#header .uk-offcanvas-bar .uk-nav li a.active-nav-link,
+#header .uk-offcanvas-bar .uk-nav li.active-nav-link {
+  font-weight: bold;
+  color: #4ab6d5;
+}
+
+#header .uk-navbar-dropdown.uk-open {
+  margin-top: 0;
+}
+
+#header .uk-navbar-nav>li.international-pac-nav-list-item .uk-navbar-dropdown {
+  min-width: 240px;
+}
+
+.site-main-slider .uk-overlay-primary {
+  background-color: rgba(21, 28, 46, 0.8);
+}
+
+.site-main-slider .slide-controller svg polyline {
+  stroke-width: 4;
+}
+
+.featured-packages-section {
+  padding: 30px 0;
+  background-color: #fcfcfc;
+}
+
+.featured-packages-section .uk-card-body,
+.packages-slider-section .uk-card-body {
+  padding: 15px 20px;
+}
+
+.featured-packages-section .uk-card-title,
+.packages-slider-section .uk-card-title{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.featured-packages-section img,
+.packages-slider-section .uk-slider-items .uk-card-media-top img {
+  width: 100%;
+}
+
+.why-cheers-and-fly-section {
+  padding: 30px 0;
+  background-color: #9ec848;
+}
+
+.why-cheers-and-fly-section,
+.why-cheers-and-fly-section .uk-heading-primary {
+  color: #fff;
+}
+
+.why-cheers-and-fly-section .qualities-wrapper {
+  transition: all ease-in-out 0.5s;
+}
+
+.why-cheers-and-fly-section .qualities-wrapper img {
+  width: 180px;
+  transition: all ease-in 0.5s;
+}
+
+.why-cheers-and-fly-section .qualities-wrapper:hover {
+  background-color: #7fa13a;
+  border-radius: 5px;
+}
+
+.why-cheers-and-fly-section .qualities-wrapper:hover>img {
+  transform: scale(0.5);
+}
+
+.about-us-section {
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+  min-height: calc(100vh - 120px);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../images/tropical-sea-bg.jpg') no-repeat center bottom;
+
+}
+
+.about-us-section article {
+  max-width: 40%;
+  margin: 0 auto;
+  padding: 20px 30px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
+}
+
+.common-payment-details-section {
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  padding: 20px 0;
+}
+
+.payments-info-wrapper {
+  width: 100%;
+}
+
+.payments-info-wrapper p {
+  margin: 5px 0 0 0;
+  font-size: 18px;
+}
+
+.payment-methods-wrapper {
+  max-width: 240px;
+  margin-top: 20px;
+  padding: 15px 0;
+  border-radius: 30px;
+  border: 1px solid #47a48b;
+}
+
+.payment-methods-wrapper span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #cb314a;
+  display: block;
+  margin-top: 20px;
+}
+
+#footer {
+  width: 100%;
+  background: linear-gradient(to top, rgba(66, 167, 209, 1), rgba(27, 68, 121, 0.7)), url(../images/monuments-of-the-world-bg.svg) repeat center bottom;
+  padding: 32px 0;
+  color: #fff;
+}
+
+#footer .uk-heading-bullet {
+  font-size: 20px;
+  color: #122a4b;
+}
+
+#footer a {
+  color: #fff;
+  transition: all ease-in 0.3s;
+}
+
+#footer a:hover {
+  color: rgb(240, 240, 240);
+  text-decoration: underline;
+}
+
+#footer .footer-list {
+  padding-left: 5px;
+}
+
+#footer .footer-list li a {
+  padding: 0 10px;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#footer .footer-list li:last-child a {
+  border-right: none;
+}
+
+#footer .social-media-list li a {
+  color: #1c4c81;
+  padding: unset;
+}
+
+.footer-bottom {
+  background-color: #2c6b8d;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+}
+
+#footer .footer-contact-wrapper .uk-width-expand {
+  padding-left: 10px;
+}
+
+/* ABOUT-US-PAGE */
+
+.about-us-wrapper {
+  padding: 15px 0 0 0;
+}
+
+.about-us-article,
+.travel-world-info {
+  padding: 20px 15px;
+}
+
+.mission-and-vision-wrapper {
+  background-color: #f9f9f9;
+  padding: 30px 0;
+}
+
+.travel-around-world-wrapper {
+  background: linear-gradient(0deg, #4fa4ff, #cfe6ff);
+  color: #fff;
+  padding-top: 0px;
+}
+
+.travel-around-world-wrapper p{
+  max-width: 70%;
+}
+
+/* PAYMENTS-PAGE */
+.payments-intro-section {
+  background-color: #f1f1f1;
+}
+
+.payments-intro-section .animated-div img {
+  width: 580px;
+  margin: auto;
+  display: block;
+}
+
+.payments-intro-section .page-breadcrumb-wrapper {
+  padding-top: 15px;
+}
+
+.bank-transfers-section .bank-account-info-wrapper {
+  border-bottom: 3px solid #f4f4f4;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.bank-transfers-section .bank-account-info-wrapper:last-child {
+  border-bottom: 0;
+}
+
+.bank-transfers-section .bank-account-info-wrapper .label {
+  font-weight: 900;
+  font-size: 22px;
+  color: #7b272a;
+}
+
+.bank-transfers-section .bank-account-info-wrapper .value {
+  font-size: 18px;
+  color: #1a447c;
+}
+
+.payments-intro-section .payments-info-wrapper,
+.services-intro-wrapper,
+.packages-intro-wrapper,
+.contact-intro-wrapper,
+.packages-featured-intro-section {
+  padding: 15px;
+}
+
+.payments-intro-section .payment-methods-wrapper:hover {
+  text-decoration: none;
+}
+
+.qr-code-section {
+  background-color: #030b40;
+  color: #fff;
+}
+
+.qr-code-section .uk-heading-medium {
+  color: #98dfff;
+}
+
+.qr-code-section .column:last-child img {
+  border-radius: 15px;
+  display: block;
+  max-height: 400px;
+}
+
+.bank-transfers-section {
+  background-color: #ebfff8;
+}
+
+.bank-transfers-section,
+.qr-code-section {
+  padding: 30px 0;
+}
+
+/* SERVICES */
+
+.services-intro-section {
+  padding: 15px 0;
+}
+
+.services-intro-section .services-intro-wrapper .sub-heading {
+  color: #382250;
+}
+
+.service-info-section {
+  background-color: #9dd5e6;
+  padding: 30px 0;
+}
+
+.service-info-section .services-type-column {
+  padding: 20px 10px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+  transition: all ease-in-out 0.3s;
+}
+
+.service-info-section .services-type-column:hover {
+  background-color: #fff;
+  box-shadow: 0 14px 25px rgb(0 0 0 / 16%);
+}
+
+.service-info-section .services-type-column img {
+  max-width: 220px;
+  height: 180px;
+  transition: all ease-in-out 3s;
+}
+
+.service-info-section .services-type-column:hover>img {
+  transform: scale(1.25);
+}
+
+.service-info-section.services-hotel-booking {
+  background-color: #f9f9f9;
+  padding: 30px 0;
+}
+
+.service-info-section.services-hotel-booking img {
+  width: 470px;
+}
+
+.service-info-section.services-air-ticket {
+  background-color: #9dd5e6;
+}
+
+.service-info-section .service-info-txt {
+  color: #2877b2;
+}
+
+.service-info-section .service-heading {
+  font-size: 22px;
+}
+
+.service-info-section.services-air-ticket .service-info-txt {
+  color: #fff;
+}
+
+.service-info-section.services-passsport {
+  background-color: #f9f9f9;
+  padding: 30px 0;
+}
+
+.service-info-section.services-visa {
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.service-info-section.services-travel-insurance {
+  background-color: #eaf1d8;
+  padding: 30px 0;
+}
+
+.service-info-section.services-forex-exchange {
+  background: radial-gradient(#fff, #cdcdcd);
+}
+
+/* CONTACT-US */
+
+.contact-intro-section {
+  padding: 15px 0;
+}
+
+.contact-intro-section .contact-intro-wrapper .sub-heading {
+  color: #48a58c;
+}
+
+.contact-intro-section .column.uk-animation-slide-right img {
+  padding-left: 15px;
+}
+
+.contact-mediums-section {
+  padding: 30px 0;
+  background-color: #f5fcff;
+}
+
+.contact-form-wrapper {
+  padding: 20px 0;
+  background-color: #1c4c81;
+  color: #ccc;
+}
+
+.contact-mediums-section .medium-wrapper .uk-card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-mediums-section .medium-wrapper .uk-card-body {
+  padding: 30px 30px;
+}
+
+.contact-form-wrapper .uk-form-stack {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+}
+
+.contact-form-wrapper .uk-form-stack .uk-form-label {
+  font-weight: bold;
+}
+
+.google-map-wrapper {
+  padding: 30px 0 0 0;
+}
+
+/* PACKAGES-MAIN */
+
+.packages-intro-section {
+  padding: 15px 0;
+  box-shadow: 0 5px 7px rgb(0 0 0 / 3%);
+}
+
+.packages-intro-section.domestic-packages {
+  background-color: #edf1f4;
+}
+
+.packages-intro-section.international-packages {
+  background-color: #dde6ed;
+}
+
+.packages-intro-section .packages-intro-wrapper .sub-heading {
+  color: #666;
+}
+
+.packages-slider-section {
+  padding: 20px 0;
+}
+
+/* PACKAGES */
+.packages-featured-intro-section {
+  padding: 15px 0;
+}
+
+.package-sub-heading {
+  font-size: 22px;
+  font-weight: 300;
+  color: #525252;
+}
+
+.package-featured-pic {
+  max-height: 480px;
+}
+
+.packages-itinerary-wrapper {
+  padding: 20px 0;
+  background-color: #f8f8f8;
+}
+
+.itinerary-img-wrapper img {
+  width: 100%;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.itinerary-details-wrapper {
+  width: 100%;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.itinerary-details-wrapper .uk-accordion-title,
+.itinerary-details-wrapper .uk-accordion-title:focus,
+.itinerary-details-wrapper .uk-accordion-title:visited {
+  color: #2877b2;
+  font-family: 'Hanuman', serif !important;
+}
+
+.itinerary-details-wrapper .uk-accordion-title:hover {
+  color: #3293dd;
+}
+
+.card-call-us-details .uk-icon{
+  margin-top: 5px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 959px) {
+  .top-header-wrapper {
+    padding: 3px 0;
+  }
+
+  #header .uk-navbar-toggle {
+    min-height: unset;
+  }
+
+  #header .uk-navbar-container.navbar-mobile li a {
+    display: inline-block;
+  }
+
+  .uk-heading-medium {
+    font-size: 24px;
+  }
+
+  #footer {
+    background-repeat: no-repeat;
+  }
+
+  .back-top,
+  .common-quick-enquiry-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .back-top {
+    padding: 5px;
+    right: 10px;
+  }
+
+  .back-top svg {
+    margin-top: 3px;
+  }
+
+  .common-quick-enquiry-icon {
+    left: 10px;
+  }
+
+  .back-top,
+  .common-quick-enquiry-icon {
+    bottom: 10px;
+  }
+
+  .about-us-section {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../images/tropical-sea-bg.jpg') no-repeat right bottom;
+  }
+
+  .about-us-section article {
+    max-width: 75%;
+  }
+
+  .travel-around-world-wrapper p{
+    max-width: unset;
+  }
+
+  .about-us-article,
+  .payments-intro-section .payments-info-wrapper,
+  .services-intro-wrapper,
+  .packages-intro-wrapper,
+  .travel-world-info,
+  .contact-intro-wrapper,
+  .packages-featured-intro-section {
+    padding: 15px;
+  }
+
+  .service-info-section.height-100vh {
+    min-height: unset;
+  }
+
+  .service-info-section.services-air-ticket,
+  .service-info-section .packages-info-wrapper,
+  .service-info-section .forex-info-wrapper {
+    padding: 30px 0px 0 15px;
+  }
+
+  .packages-slider-section .uk-slider-container-offset {
+    margin: -11px 0px -39px 0px;
+    padding-bottom: 15px;
+  }
+
+  .travel-intro-img {
+    padding-left: 15px;
+  }
+
+  .package-featured-pic{
+    width: 100%;
+    max-height: unset;
+  }
+}
+
+@media screen and (max-width: 1136px) {
+  .about-us-wrapper .uk-flex-middle {
+    align-items: unset;
+  }
+
+}
+
+@media screen and (min-width: 640px) {
+  .top-header-wrapper .contact-info-wrapper {
+    width: unset;
+  }
+
+  .itinerary-img-wrapper {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+
+  .about-us-article,
+  .travel-world-info,
+  .payments-intro-section .payments-info-wrapper,
+  .services-intro-wrapper,
+  .packages-intro-wrapper,
+  .service-info-section.services-air-ticket,
+  .service-info-section .forex-info-wrapper,
+  .contact-intro-wrapper,
+  .packages-featured-intro-section {
+    padding: 15px 0 15px 70px;
+  }
+
+  .packages-featured-intro-section {
+    padding-bottom: 0;
+  }
+
+
+  .service-info-section .packages-info-wrapper {
+    padding: 0 15px;
+  }
+
+  .about-us-wrapper img {
+    max-height: 480px;
+    display: block;
+    margin: unset;
+    margin-left: auto;
+  }
+
+  .page-breadcrumb-wrapper {
+    padding: 0 15px 0 70px;
+  }
+
+  .sub-heading {
+    font-size: 22px;
+  }
+
+  .contact-form-wrapper .uk-form-stack {
+    max-width: 90%;
+  }
+
+  .package-sub-heading {
+    font-size: 22px;
+  }
+
+  .packages-itinerary-wrapper {
+    padding: 30px 0;
+  }
+
+  .packages-slider-section .uk-slider-container-offset{
+    padding-bottom: 3px;
+  }
+
+  .travel-intro-img,
+  .payments-intro-section .animated-div img {
+    margin-right: unset;
+    margin-left: auto;
+  }
+
+  .services-intro-section .travel-intro-img {
+    width: unset;
+    height: 480px;
+  }
+}
