@@ -1169,28 +1169,17 @@
         <div class="uk-modal-body">
           <form class="form-stacked" id="enquiryForm" method="post">
             <div class="uk-margin">
-              <label class="uk-form-label" for="name">Name</label>
-              <div class="uk-form-controls">
-                <input class="uk-input" id="enquiry-name" name="name" type="text" placeholder="e.g. John Smith">
-              </div>
+              <input class="uk-input" type="text" name="name" placeholder="e.g. John Smith*" minlength="2" maxlength="100" />
             </div>
-
+            
             <div class="uk-margin">
-              <label class="uk-form-label" for="email">Email</label>
-              <div class="uk-form-controls">
-                <input class="uk-input" id="enquiry-email" name="email" type="email"
-                  placeholder="e.g. johnsmith@yahoo.com">
-              </div>
+              <input class="uk-input" type="email" name="email" placeholder="e.g. johnsmith@yahoo.com *" maxlength="254" />
             </div>
-
+            
             <div class="uk-margin">
-              <label class="uk-form-label" for="phone">Contact No.</label>
-              <div class="uk-form-controls">
-                <input class="uk-input" id="enquiry-contact" name="phone" type="number"
-                  placeholder="e.g. +91-9999-000-000">
-              </div>
+              <input class="uk-input" type="tel" name="phone" placeholder="e.g. +91-9999-000-000 *" minlength="7" maxlength="20" />
             </div>
-
+            
             <div class="uk-margin">
               <label class="uk-form-label" for="enquiry-get-quote-of">Get Quote of</label>
               <div class="uk-form-controls">
@@ -1210,10 +1199,17 @@
                 <label><input class="uk-radio" type="radio" value="Others" name="getQuoteOf">Others</label>
               </div>
             </div>
-
-            <button class="uk-button uk-button-primary uk-margin-auto" id="submit-quick-enquiry"
-              type="submit">Submit</button>
-
+            
+            <div class="uk-margin">
+              <textarea class="uk-textarea" name="message" placeholder="e.g. I wan to book a Europe package for 3D/4N" rows="4"
+                maxlength="1000"></textarea>
+            </div>
+            
+            <div class="uk-margin">
+              <button id="enquirySubmitBtn" class="uk-button uk-button-primary uk-width-1-1" type="submit">
+                Send Enquiry
+              </button>
+            </div>
           </form>
 
           <div id="enquiry-form-success" class="uk-text-center">
